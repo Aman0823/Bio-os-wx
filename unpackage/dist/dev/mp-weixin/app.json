@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/workplace/workplace",
+    "pages/acount/acount",
+    "pages/message/message"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4281ff",
+    "backgroundColor": "#4281ff"
+  },
+  "tabBar": {
+    "selectedColor": "#4281ff",
+    "list": [
+      {
+        "iconPath": "static/home-3-line.png",
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "selectedIconPath": "static/home-3-line1.png"
+      },
+      {
+        "iconPath": "static/code.png",
+        "text": "工作台",
+        "pagePath": "pages/workplace/workplace",
+        "selectedIconPath": "static/code1.png"
+      },
+      {
+        "iconPath": "static/message.png",
+        "text": "消息",
+        "pagePath": "pages/message/message",
+        "selectedIconPath": "static/message1.png"
+      },
+      {
+        "iconPath": "static/account.png",
+        "text": "个人",
+        "pagePath": "pages/acount/acount",
+        "selectedIconPath": "static/account1.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
