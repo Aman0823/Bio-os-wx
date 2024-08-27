@@ -7,9 +7,10 @@
 				<img class="head-img-content" src="/static/account1.png" mode="aspectFit" />
 			</div>
 			<div class="inf-content">
-				<div class="user-name">用户名</div>
-				<div class="id-content">账号ID：123</div>
+				<div class="user-name">{{userName}}</div>
+				<div class="id-content">账号ID: {{accountID}}</div>
 			</div>
+			<button class="upload-id" hover-start-time="0">ID授权</button>
 		</div>
 	</div>
 	<!-- 列表 -->
@@ -24,7 +25,8 @@
 	export default {
 		data() {
 			return {
-				accountID:'123',
+				userName:'微信用户',
+				accountID:'',
 				menuItems: [  
 				        { text: '账号管理',bindTap: 'acountManage' },  
 				        { text: '安全设置',bindTap: 'security' },  
@@ -104,6 +106,17 @@
 	justify-content: center;
 	color: #111212;
 	padding-bottom: 5rpx;
+}
+.upload-id{
+	float: right;
+	background-color: #4281ff;
+	color: white;
+	font-size: 20rpx;
+	font-weight: 500;
+	left: 15%;
+}
+.upload-id:hover{
+	background-color: #366ad1;
 }
 .user-info{
 	text-align: left;

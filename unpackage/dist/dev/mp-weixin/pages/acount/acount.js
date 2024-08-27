@@ -1,9 +1,11 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const _sfc_main = {
   data() {
     return {
-      accountID: "123",
+      userName: "微信用户",
+      accountID: "",
       menuItems: [
         { text: "账号管理", bindTap: "acountManage" },
         { text: "安全设置", bindTap: "security" },
@@ -31,7 +33,11 @@ const _sfc_main = {
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.f($data.menuItems, (item, index, i0) => {
+    a: common_assets._imports_0,
+    b: common_assets._imports_1,
+    c: common_vendor.t($data.userName),
+    d: common_vendor.t($data.accountID),
+    e: common_vendor.f($data.menuItems, (item, index, i0) => {
       return {
         a: common_vendor.t(item.text),
         b: index,
@@ -40,5 +46,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   };
 }
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/Coding/HbuilderProject/bio-os/pages/acount/acount.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);
 wx.createPage(MiniProgramPage);

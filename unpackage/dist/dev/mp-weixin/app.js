@@ -7,6 +7,7 @@ if (!Math) {
   "./pages/workplace/workplace.js";
   "./pages/acount/acount.js";
   "./pages/message/message.js";
+  "./pages/newWorkspace/newWorkspace.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -19,9 +20,8 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/Coding/HbuilderProject/bio-os/App.vue"]]);
 function createApp() {
-  const app = common_vendor.createSSRApp(App);
+  const app = common_vendor.createSSRApp(_sfc_main);
   return {
     app
   };

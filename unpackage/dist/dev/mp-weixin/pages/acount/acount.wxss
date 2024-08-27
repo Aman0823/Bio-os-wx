@@ -48,6 +48,17 @@
 	color: #111212;
 	padding-bottom: 5rpx;
 }
+.upload-id{
+	float: right;
+	background-color: #4281ff;
+	color: white;
+	font-size: 20rpx;
+	font-weight: 500;
+	left: 15%;
+}
+.upload-id:hover{
+	background-color: #366ad1;
+}
 .user-info{
 	text-align: left;
 	font-size: 32rpx;

@@ -4,7 +4,8 @@
     "pages/home/home",
     "pages/workplace/workplace",
     "pages/acount/acount",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/newWorkspace/newWorkspace"
   ],
   "window": {
     "navigationBarTextStyle": "white",
